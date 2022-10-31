@@ -71,7 +71,10 @@ This will create a folder containing the model fine-tuned on the beauty dataset 
 
 Testing the model:
 ```bash
-python run_beauty_reviews.py --model_name_or_path experiments/experiment_%Y-%m-%d_%H-%M-%S --do_predict --test_file data/test.txt
+python run_beauty_reviews.py \
+     --model_name_or_path experiments/experiment_%Y-%m-%d_%H-%M-%S \
+     --do_predict \
+     --test_file data/test.txt
 ```
 
 This command generates a `predictions.txt` file inside the experiment's folder with the examples from the test dataset.
