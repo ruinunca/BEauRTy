@@ -33,9 +33,12 @@ Install the requirements (inside the project folder):
 
 ## Getting Started:
 
+**Note:** 
+Due to the `EarlyStopping`, you need to run the script with both `--do_train` and `--do_eval`.
+
 ### Train the model:
 ```bash
-(venv) python run_beauty_reviews.py --do_train
+(venv) python run_beauty_reviews.py --do_train --do_eval
 ```
 
 Available commands:
